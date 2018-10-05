@@ -1,0 +1,71 @@
+#include<avr/io.h>
+
+void left()
+{
+      PORTB&=~(1<<0);   
+      PORTB&=~(1<<1);         
+      PORTB&=~(1<<2);
+      PORTB|=1<<3; 
+}
+void right()
+{
+      PORTB&=~(1<<2);   
+      PORTB&=~(1<<3);         
+      PORTB&=~(1<<0);
+      PORTB|=1<<1; 
+}
+void forward()
+{
+      PORTB&=~(1<<0);   
+      PORTB|=1<<1;      
+      PORTB&=~(1<<2);
+      PORTB|=1<<3;
+}
+void backward()
+{
+      PORTB&=~(1<<1);   
+      PORTB|=1<<0;      
+      PORTB&=~(1<<3);
+      PORTB|=1<<2;
+}
+
+void stay()
+{
+      PORTB&=~(1<<0);   
+      PORTB&=~(1<<1);         
+      PORTB&=~(1<<2);
+      PORTB&=~(1<<3);      
+}
+
+void setup()
+{
+  Serial.begin(9600);     
+  DDRB=0xFF;
+  DDRD=0xFF;
+  PORTD|=1<<5|1<<6;
+  
+}
+
+void loop()
+{
+  
+  char data=Serial.read();    
+  
+  switch(data)
+  {
+    case 's':backward();
+            break;
+    case 'w':forward();
+            break;
+    case 'd':right();
+            break;
+    case 'a':left();
+            break;
+    default: stay(); 
+                        
+  } 
+  //adjust delay as per your requirement
+  delay(100);
+}
+
+
