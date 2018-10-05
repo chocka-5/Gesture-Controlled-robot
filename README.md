@@ -18,6 +18,6 @@ HC 05/06 works on serial communication. The Android app is designed to send seri
 The Arduino Bluetooth module in the robot at the other end receives the data and sends it to the Arduino through the TX pin of the Bluetooth module (connected to RX pin of Arduino). 
 The code uploaded to the Arduino checks the received data ,compares it  and does the required task. 
 
-![picture](/home/chocka/repos/gesture-controlled-robot/Arduino Bluetooth Hardware.png)
+
 
 
