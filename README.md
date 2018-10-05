@@ -10,5 +10,12 @@ This device measures the static acceleration of gravity when we tilt it. And giv
 We used phone to transmit command to the robot.Phone has in-built accelero-meter and bluetooth.Phone was paired with bluetooth sensor in the robot.
 An App was created to transmit the accelero-meter values to the bot.
 
-<b> APP LINK : https://drive.google.com/file/d/1yRdzylaV7zZTHrXqdVAr4lcwMBNz_xoC/view?usp=sharing </b>
+**APP LINK : https://drive.google.com/file/d/1yRdzylaV7zZTHrXqdVAr4lcwMBNz_xoC/view?usp=sharing**
+
+######## Arduino-Bluetooth Interfacing
+
+HC 05/06 works on serial communication. The Android app is designed to send serial data to the Arduino Bluetooth module when a button is pressed on the app. 
+The Arduino Bluetooth module in the robot at the other end receives the data and sends it to the Arduino through the TX pin of the Bluetooth module (connected to RX pin of Arduino). 
+The code uploaded to the Arduino checks the received data ,compares it  and does the required task. 
+
 
