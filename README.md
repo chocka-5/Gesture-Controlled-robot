@@ -10,5 +10,5 @@ This device measures the static acceleration of gravity when we tilt it. And giv
 We used phone to transmit command to the robot.Phone has in-built accelero-meter and bluetooth.Phone was paired with bluetooth sensor in the robot.
 An App was created to transmit the accelero-meter values to the bot.
 
-<b>APP LINK : https://drive.google.com/file/d/1yRdzylaV7zZTHrXqdVAr4lcwMBNz_xoC/view?usp=sharing</b>
+<b> APP LINK : https://drive.google.com/file/d/1yRdzylaV7zZTHrXqdVAr4lcwMBNz_xoC/view?usp=sharing </b>
 
