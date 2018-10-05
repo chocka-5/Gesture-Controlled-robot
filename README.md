@@ -12,7 +12,7 @@ An App was created to transmit the accelero-meter values to the bot.
 
 **APP LINK : https://drive.google.com/file/d/1yRdzylaV7zZTHrXqdVAr4lcwMBNz_xoC/view?usp=sharing**
 
-######## Arduino-Bluetooth Interfacing
+###### Arduino-Bluetooth Interfacing
 
 HC 05/06 works on serial communication. The Android app is designed to send serial data to the Arduino Bluetooth module when a button is pressed on the app. 
 The Arduino Bluetooth module in the robot at the other end receives the data and sends it to the Arduino through the TX pin of the Bluetooth module (connected to RX pin of Arduino). 
